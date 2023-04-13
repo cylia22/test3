@@ -7,10 +7,6 @@
   </head>
   <body>
     <h1>Handrail Configurator</h1>
-    <div id="handrail">
-      <img src="handrail.jpg" alt="Handrail">
-      <div id="led-strip"></div>
-    </div>
     <form>
       <fieldset>
         <legend>Step 1: Choose handrail type</legend>
@@ -31,7 +27,7 @@
         <legend>Step 3: Choose LED light option</legend>
         <input type="radio" id="ledYes" name="ledoption" value="yes">
         <label for="ledYes">Yes</label><br>
-        <input type="radio" id="ledNo" name="ledoption" value="no">
+        <input type="radio" id="ledNo" name="ledoption" value="no" checked>
         <label for="ledNo">No</label><br>
       </fieldset>
       <fieldset id="ledOptions" style="display: none;">
@@ -46,6 +42,8 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
+    <div id="handrail3D"></div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
